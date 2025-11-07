@@ -43,7 +43,7 @@ if (process.env.NODE_ENV === "production") {
 
   // ✅ FIXED: use regex route to match everything (Express 5+ compatible)
   app.get(/.*/, (req, res) => {
-    res.sendFile(path.join(__dirname, "../frontend/dist/index.html"));
+   res.sendFile(path.join(__dirname, "../frontend", "dist", "index.html"));
   });
 }
 
